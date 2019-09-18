@@ -1,54 +1,124 @@
-
-
-
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+.historique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.historique p{
+    margin-top: 1%;
+    width: 50%;
+}
+.concepth2{
+    text-align: center;
+    margin-top: 2%;
+}
+.concept{
+    display: flex;
+    flex-direction: column;
+    margin: 10% 10% 5% 10%;
+}
+.concept p{
+    text-align: justify;
+}
+.concept img{
+    border-radius: 100%;
+    height: 10%;
+    width: 10%;
+    margin: 7% 0;
+}
+.cocktails, .tapas, .danse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+.cocktails img{
+    margin-top: 0;
+}
+.evenements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7%;
+}
+.evenementsh2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.evenementsp{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.evenements div{
+    background: #FFA500;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.evenements div p{
+    display: none;
+    position: absolute;
+    top: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.evenements div:hover p{
+    display: block;
+}
+.evenements div a{
+    display: flex;
+}
+.evenements img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.evenements img:hover{
+    opacity: 0.3;
+}
 footer {
-
     width: 100%;
     position: absolute;
-    background-color: #59719A ;
+    background-color: 
     padding: 30px 0px; 
-    display: flex;
-    
+    display: flex;  
 }
-
-
-@font-face {
-
-    font-family: "Raleway, sans-serif";
-    src: url<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-}
-
-p {
-
-    font-family: Raleway, sans-serif; 
+footer p, .formnewsletter p {
+    font-family: sans-serif;
     text-align: center ;
 }
-
 article {
-
     font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
     color: black;
     font-size: 11px;
 }
 .puntacana {
-
     display: none;
 }
-
-img {
-
+footer img {
     width: 50px;
 }
-
-
 .flex1 {
-
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
 
 }
-
 .flex2 {
     display: flex;
     flex-direction: column;
@@ -57,35 +127,24 @@ img {
     width: 100%;
  
 }
-
 .flex3 {
-
     text-align: center;
     padding-top: 10px;
-    
-
 }
-
 .column1 , .column2 {
-
     display: flex;
     flex-direction: row;
     display: flex;
     justify-content: center;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
     height: 100%;
     margin: 20px;
-    text-align: center ;
-    
+    text-align: center;  
 } 
-
 .column2 p {
-
     display: none;
-}    
-
+}
 .formnewsletter{
-
     width: 100%;
     display: flex;
     flex-direction: column ;
@@ -94,45 +153,60 @@ img {
     padding: 10px;
     color: #fff;
     background-color: black;
-    
-
 }
-
-
 .email-box__input {
     height: 20%;
-    width: 30%;
     padding: 14px 40px;
     text-align: center;
     background : none;
     border: 3;
     border-color: white;
     color: white
-
 }
-
 .button {
     justify-content: right;
     padding: 14px 40px;
     color: black;
-    border-radius: 8px;
-   
-    
+    border-radius: 8px;  
 }
-
 .inscris {
-
     font-size:30px;
-   
+    margin-bottom: 2%;
 }
 
+@media only screen and (min-width: 740px) and (max-width: 959px){
+    .formnewsletter {
 
-
-
-
-@media screen and (min-width: 960px ) {
-
-
+        display: flex;
+        flex-direction: row;
+    }
+    .email-box__input{
+        width: 30%;
+    }
+    .inscris {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (min-width: 960px){
+    .concept{
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    .concept img{
+        border-radius: 100%;
+        height: 35%;
+        width: 30%;
+        margin: 20% 0;
+    }
+    .cocktails, .tapas, .danse{
+        margin: 5% 5% 15% 5%;
+    }
+    .evenements{
+        flex-direction: row;
+    }
+    .evenements div{
+        display: flex;
+    }
     .column2 p {
 
         display: inline;
@@ -160,7 +234,10 @@ img {
         
     
     }
-    
-
-
+    .email-box__input{
+        width: 30%;
+    }
+    .inscris {
+        margin-bottom: 0;
+    }
 }
