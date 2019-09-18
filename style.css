@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+.historique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.historique p{
+    margin-top: 1%;
+    width: 50%;
+}
+.concepth2{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.concept{
+    display: flex;
+    flex-direction: column;
+}
+.cocktails, .tapas, .danse{
+    display: flex;
+    align-items: center;
+    margin: 1%;
+}
+.concept p{
+    text-align: justify;
+}
+.concept img{
+    border-radius: 100%;
+    height: 10%;
+    width: 10%;
+    background-color: none;
+}
+.evenements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.evenements div{
+    background: #FFA500;
+    display: flex;
+}
+.evenements img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    opacity: 0.5;
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.evenements img:hover{
+    opacity: 1;
+}
+@media only screen and (min-width: 960px){
+    .concept{
+        flex-flow: row;
+    }
+    .cocktails, .tapas, .danse{
+        flex-direction: column;
+        margin: 1%;
+    }
+    .cocktails div, .tapas div, .danse div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .concept img{
+        border-radius: 100%;
+        height: 45%;
+        width: 30%;
+    }
+    .evenements{
+        flex-direction: row;
+    }
+    .evenements div{
+        display: flex;
+        margin: 1%;
+        width: 33%;
+    }
+}
