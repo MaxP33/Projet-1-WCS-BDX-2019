@@ -20,31 +20,28 @@
 }
 .concepth2{
     text-align: center;
-    margin-top: 2%;
+    margin: 10% 0;
 }
 .concept{
     display: flex;
     flex-direction: column;
-    margin: 10% 10% 5% 10%;
+    margin: 5% 10% 0 10%;
 }
 .concept p{
     text-align: justify;
+    margin-top: 10%;
 }
 .concept img{
     border-radius: 100%;
     height: 10%;
     width: 10%;
-    margin: 7% 0;
 }
 .cocktails, .tapas, .danse{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 1%;
-}
-.cocktails img{
-    margin-top: 0;
 }
 .evenements{
     display: flex;
@@ -54,11 +51,11 @@
 }
 .evenementsh2{
     text-align: center;
-    margin-bottom: 5%;
+    margin: 10% 0;
 }
 .evenementsp{
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .evenements div{
     background: #FFA500;
@@ -131,6 +128,10 @@ footer img {
     text-align: center;
     padding-top: 10px;
 }
+.flex3 a{
+    text-decoration: none;
+    color: black;
+}
 .column1 , .column2 {
     display: flex;
     flex-direction: row;
@@ -188,18 +189,29 @@ footer img {
     }
 }
 @media only screen and (min-width: 960px){
+    .concepth2{
+        text-align: center;
+        margin: 5% 0;
+    }
     .concept{
         flex-direction: row;
-        margin-bottom: 0;
+    }
+    .concept p{
+        margin-top: 5%;
     }
     .concept img{
         border-radius: 100%;
         height: 35%;
         width: 30%;
-        margin: 20% 0;
     }
     .cocktails, .tapas, .danse{
-        margin: 5% 5% 15% 5%;
+        margin: 3%;
+    }
+    .evenementsh2{
+        margin: 5% 0;
+    }
+    .evenementsp{
+        margin-bottom: 5%;
     }
     .evenements{
         flex-direction: row;
