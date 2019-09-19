@@ -67,9 +67,9 @@ function initDesktop() {
 
 function redimensionnement(e) {
   if ("matchMedia" in window) {
-    if (window.matchMedia("(max-width:960px)").matches) {
+    if (window.matchMedia("(max-width:740px)").matches) {
       initMobile();
-    } else if (window.matchMedia("(min-width:960px)").matches) {
+    } else if (window.matchMedia("(min-width:740px)").matches) {
       initDesktop();
     }
   }

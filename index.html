@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <title>Punta cana</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,10 +22,10 @@
                         </div>
                     </a>
                     <ul id="list" class="active">
-                        <li><a class="aNavBar" href="#">History</a></li>
-                        <li><a class="aNavBar" href="#">Spécialités / Concept</a></li>
-                        <li><a class="aNavBar" href="#">Evenements</a></li>
-                        <li><a class="aNavBar" href="#">Contacts</a></li>
+                    <li><a class="aNavBar" href="#historique">Histoire</a></li>
+                        <li><a class="aNavBar" href="#concept">Concept</a></li>
+                        <li><a class="aNavBar" href="#evenements">Événements</a></li>
+                        <li><a class="aNavBar" href="#contact">Contacts</a></li>
                     </ul>
                 </header>
             </section>
@@ -33,7 +37,7 @@
                     <img class="mySlides" src="images/imgBar.jpg" style="width:100%">
         
                     <p class="myText">Des cocktails uniques</p>
-                    <p class="myText">Un lieu convivial</p>
+                    <p class="myText" id="myText2">Un lieu convivial</p>
                     <p class="myText">Des Live Music</p>
         
                     <button class="w3-button w3-black w3-display-left btCarouselL" onclick="plusDivs(-1)"><img class="imgButton"
@@ -43,7 +47,7 @@
                 </div>
         
             </section>
-<section class="historique">
+<section class="historique" id="historique">
         <h2> Qui Sommes nous ?</h2>
         <p>Désireux de créer un concept de bar correspondant à nos origines, nous avons opté pour un bar latino avec des influences dominicaines.
             <br> Dès 18h, une clientèle éclectique se retrouve pour l'apéritif Tapas & Salsa autour de cocktails aux noms évocateurs tels que Cuba Libre, Daiquiri et Caïpirinha. Sans oublier les spécialités à découvrir : Morir Soñando, Larimar et bien sûr, le célèbre Mojito !
@@ -51,7 +55,7 @@
             <br> Nous sommes là pour vous faire passer de bons moments autour d'un verre, de tapas et/ou de cours de danse. </p>
     </section>
     <section>
-        <h2 class="concepth2">Notre Concept</h2>
+        <h2 class="concepth2" id="concept">Notre Concept</h2>
         <div class="concept">
             <div class="cocktails">
                 <img src="images/cocktail.png" alt="cocktail">
@@ -77,7 +81,7 @@
             </div>
         </div>
     </section>
-    <h2 class="evenementsh2">Événements</h2>
+    <h2 class="evenementsh2" id="evenements">Événements</h2>
     <p class="evenementsp">Venez au Punta Cana bar découvrir nos prochains événements. 
         <br> Cours de danse, soirées latino, apéros tapas, live music... 
         <br> De quoi animer vos soirées !
@@ -85,11 +89,11 @@
     <section class="evenements">
         <div>
             <a href="https://www.facebook.com/puntacana.bartapas/?epa=SEARCH_BOX"><img src="images/event cours de danse.jpg" alt="cours de danse"></a>
-            <p>VIENS DANSER LE <br> 15 OCTOBRE !</p>
+            <p>VIENS DANSER LE <br> 15 OCTOBRE!</p>
         </div>
         <div>
             <a href="https://www.facebook.com/puntacana.bartapas/?epa=SEARCH_BOX"><img src="images/aperotapas.jpg" alt="assiette tapas"></a>
-            <p>APERO DE LOS AMIGOS !</p>
+            <p>APERO DE LOS AMIGOS!</p>
         </div>
         <div>
             <a href="https://www.facebook.com/puntacana.bartapas/?epa=SEARCH_BOX"><img src="images/soireecocktails.jpg" alt="cocktail"></a>
@@ -97,7 +101,7 @@
         </div>
     </section>
     <section>
-    <div class="formnewsletter">
+    <div class="formnewsletter" id="contact">
         <div class="inscris">
             <p>Inscris-toi !</p>
         </div>
@@ -113,10 +117,10 @@
     <div class="flex2">
         <div class="column1">
             <div class="facebook">  
-                <a href="https://fr-fr.facebook.com/puntacana.bartapas/" title="Professional WordPress Development"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://fr-fr.facebook.com/puntacana.bartapas/" title="Professional WordPress Development"><img src="images/facebook.svg" alt="Facebook"></a>
             </div>  
             <div class="insta">
-                <a href="https://www.instagram.com/explore/locations/1014201839/punta-cana-bar/" title="Insta Punta Cana Bar"><img src="images/instagram1.png" alt="Instagram "></a>
+                <a href="https://www.instagram.com/explore/locations/1014201839/punta-cana-bar/" title="Insta Punta Cana Bar"><img src="images/instagram1.jpg" alt="Instagram "></a>
              </div> 
         </div>  
         <div class="column2">
