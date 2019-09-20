@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,6 +12,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Body navbar --> 
+
         <section class="navbarCar">
                 <header>
                     <img class="logo" src="images/logo.png" alt="" />
@@ -29,12 +31,14 @@
                     </ul>
                 </header>
             </section>
-        
+
+<!-- Body carousel --> 
+
             <section class="navbarCar">
                 <div class="w3-content w3-display-container containerC">
-                    <img class="mySlides" src="images/image.png" style="width 100%">
-                    <img class="mySlides" src="images/imgConcert.jpg" style="width:100%">
-                    <img class="mySlides" src="images/imgBar.jpg" style="width:100%">
+                    <img class="mySlides" src="images/image.png" alt="cocktail">
+                    <img class="mySlides" src="images/imgConcert.jpg" alt="soirée">
+                    <img class="mySlides" src="images/imgBar.jpg" alt="concert">
         
                     <p class="myText">Des cocktails uniques</p>
                     <p class="myText" id="myText2">Un lieu convivial</p>
@@ -47,6 +51,9 @@
                 </div>
         
             </section>
+
+<!-- Body historique --> 
+
 <section class="historique" id="historique">
         <h2> Qui Sommes nous ?</h2>
         <p>Désireux de créer un concept de bar correspondant à nos origines, nous avons opté pour un bar latino avec des influences dominicaines.
@@ -54,6 +61,9 @@
             L'ambiance évolue au fil de la soirée au son des rythmes latinos : Salsa, Merengue, Bacchata, Latin House ou Reggaeton. Une équipe dynamique et des animations (danseurs, percussions, saxo...) font vibrer cette population cosmopolite dans la convivialité et la bonne humeur.
             <br> Nous sommes là pour vous faire passer de bons moments autour d'un verre, de tapas et/ou de cours de danse. </p>
     </section>
+
+<!-- Body concept --> 
+
     <section>
         <h2 class="concepth2" id="concept">Notre Concept</h2>
         <div class="concept">
@@ -81,6 +91,9 @@
             </div>
         </div>
     </section>
+
+<!-- Body evenements -->
+
     <h2 class="evenementsh2" id="evenements">Événements</h2>
     <p class="evenementsp">Venez au Punta Cana bar découvrir nos prochains événements. 
         <br> Cours de danse, soirées latino, apéros tapas, live music... 
@@ -88,7 +101,7 @@
     </p>
     <section class="evenements">
         <div>
-            <a href="https://www.facebook.com/puntacana.bartapas/?epa=SEARCH_BOX"><img src="images/event cours de danse.jpg" alt="cours de danse"></a>
+            <a href="https://www.facebook.com/puntacana.bartapas/?epa=SEARCH_BOX"><img src="images/eventcoursdedanse.jpg" alt="cours de danse"></a>
             <p>VIENS DANSER LE <br> 15 OCTOBRE!</p>
         </div>
         <div>
@@ -100,48 +113,60 @@
             <p>FIESTA COCKTAILS!</p>
         </div>
     </section>
-    <section>
-    <div class="formnewsletter" id="contact">
+
+ <!-- form --> 
+
+    <div class="formnewsletter">
+    
         <div class="inscris">
-            <p>Inscris-toi !</p>
+            <p class="inscris-toi">Inscris-toi !</p>
         </div>
-        <input type="text" class="email-box__input" placeholder="jamesbond@007.com"/>
+        <input type="text" class="email-box__input" placeholder="miguelito@blingbling.com" />
         <div class="button">
-        <button type="submit" class="button">SEND</button></div>
+            <button type="submit" class="button" onclick="savemail()">SEND</button>            
+        </div>
     </div>
-    </section>
-    <footer>
-    <div class="flex1"></div> 
-        <img src="images/logopuntacana.png" class="puntacana" alt="Punta Cana Bar" />
-    </div>
-    <div class="flex2">
-        <div class="column1">
-            <div class="facebook">  
-                <a href="https://fr-fr.facebook.com/puntacana.bartapas/" title="Professional WordPress Development"><img src="images/facebook.svg" alt="Facebook"></a>
-            </div>  
-            <div class="insta">
-                <a href="https://www.instagram.com/explore/locations/1014201839/punta-cana-bar/" title="Insta Punta Cana Bar"><img src="images/instagram1.jpg" alt="Instagram "></a>
-             </div> 
-        </div>  
-        <div class="column2">
-            <div class="address">
-                <a href="https://www.google.com/maps/place/Punta+Cana+Bar/@44.8395898,-0.5597911,15z/data=!4m2!3m1!1s0x0:0x446e62f5b8ba5848?sa=X&ved=2ahUKEwjppLumotjkAhUKrxoKHWi2A20Q_BIwC3oECAsQCw" title="Adress punta Cana Bar"><img src="images/position.png" alt="Map"></a>
-                    <p>1 quai Deschamps </p><p>33100 Bordeaux</p>
-            </div>
-            <div class="mail">
-                <a href="mailto:puntacana4ever@gmail.fr"><img src="images/e-mail-logo.png" alt="Mail"></a>
-                    <p>puntacana4ever@gmail.fr</p>
-            </div>
-            <div class="phone">
-                <a href="tel:+33658500332"><img src="images/telephoneapp.png " alt="telephone"></a>
-                    <p>06 58 50 03 32</p>
-            </div> 
-    </div>
-    <div class="flex3">        
-        <article> @WildCodeSchool2019.<a href="Mentions légales" class="Mentions légales"> Mentions légales</a></article>
-    </div> 
-    </footer>
-    <script src="javascript.js"></script>
+    
+    <!-- footer --> 
+
+        <footer>
+    
+                <img src="images/logopuntacana.png" class="puntacana" alt="Punta Cana Bar"/>
+            
+            <div class="flex2">
+    
+                <div class="column1">
+                    <div class="facebook">  
+                        <a href="https://fr-fr.facebook.com/puntacana.bartapas/" title="Professional WordPress Development"><img src="images/facebook.png" alt="Facebook"></a>
+                    </div>  
+                    <div class="insta">
+                        <a href="https://www.instagram.com/explore/locations/1014201839/punta-cana-bar/" title="Insta Punta Cana Bar"><img src="images/instagram.png" alt="Instagram "></a>
+                    </div> 
+                </div>  
+    
+                <div class="column2">
+                    <div class="address">
+                        <a href="https://www.google.com/maps/place/Punta+Cana+Bar/@44.8395898,-0.5597911,15z/data=!4m2!3m1!1s0x0:0x446e62f5b8ba5848?sa=X&ved=2ahUKEwjppLumotjkAhUKrxoKHWi2A20Q_BIwC3oECAsQCw" title="Adress punta Cana Bar"><img id="position" src="images/position.png" alt="Map"></a>
+                        <p>1 quai Deschamps 33100 Bordeaux</p>
+                    </div>
+                    <div class="mail">
+                        <a href="mailto:puntacana4ever@gmail.fr"><img src="images/whiteemail.png" alt="Mail"></a>
+                        <p>puntacana4ever@gmail.fr</p>  
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+33658500332"><img src="images/telephoneapp.png " alt="telephone"></a>
+                        <p>06 58 50 03 32</p>
+                    </div> 
+                </div>
+    
+            <div class="flex3">        
+                        <article>@WildCodeSchool2019.<a href="#" class="mentionslegales"> Mentions légales</a></article>    
+                </div>  
+            </div>    
+    
+        </footer>
+        <script src="javascript.js"></script>
+    
 </body>
 </html>
 

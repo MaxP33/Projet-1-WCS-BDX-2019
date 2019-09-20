@@ -1,3 +1,16 @@
+/* Function for the button send */
+
+function savemail() {
+  document.getElementById("send");
+  const message = "Votre mail a bien été enregistré !";
+  alert(message);
+}
+
+
+/* Function for the carousel */
+
+
+
 var slideIndex = 1;
 var slideIn = 1;
 showDivs(slideIndex);
@@ -7,6 +20,8 @@ function plusDivs(n) {
   showDivs((slideIndex += n));
   showText((slideIn += n));
 }
+
+/* Function for slides pictures */
 
 function showDivs(n) {
   var i;
@@ -22,6 +37,8 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = "block";
 }
+
+/* Function for text */
 
 function showText(n) {
   var i;
@@ -67,9 +84,9 @@ function initDesktop() {
 
 function redimensionnement(e) {
   if ("matchMedia" in window) {
-    if (window.matchMedia("(max-width:740px)").matches) {
+    if (window.matchMedia("(max-width:860px)").matches) {
       initMobile();
-    } else if (window.matchMedia("(min-width:740px)").matches) {
+    } else if (window.matchMedia("(min-width:860px)").matches) {
       initDesktop();
     }
   }
