@@ -557,7 +557,7 @@ a.mentionslegales {
     }
     .concept img{
       border-radius: 100%;
-      height: 30%;
+      height: auto;
       width: 30%;
     }
     .cocktails, .tapas, .danse{
